@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circulo{
+    background: rgb(255, 0, 0);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.cuadradoRedondeado{
+    background: rgb(255, 0, 0);
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    border-radius: 25%;
+}
+h1{
+    background: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+body{
+    background: blue;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.cuadrado {
+    background: rgb(255, 0, 0);
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    transition: all 1s;
+    animation: correr 2s infinite;
+}
+.cuadrado:hover{
+    transform: rotate(45deg);
+    background: white;
+border-radius: 50%;
+}
+
+@keyframes correr{
+    0%{
+
+    }
+    50%{
+transform: translate(100px,50px);
+    }
+    70%{
+    transform: translate(200px) rotate(180deg);
+    }
+    100%{
+transform: rotate(360deg)
+    }
+}
+              
+.grow{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.grow:hover{
+    transform: scale3d(1.5, 1.5, 0.3);
+        -webkit-transform: scale3d(1.5, 1.5, 0.3);
+        -moz-transform: scale3d(1.5, 1.5, 0.3);
+    box-shadow: 4px 4px 10px black;
+}
+              
+.skewY{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.skewY:hover{
+    transform: skewY(1.07rad);
+        -webkit-transform: skewY(15deg);
+        -moz-transform: skewY(15deg);
+}
+
